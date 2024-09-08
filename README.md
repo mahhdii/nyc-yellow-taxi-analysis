@@ -77,6 +77,18 @@ Execute the Python script to load, process, and filter the data:
 
 `python yellow_taxi_trips.py`
 
+
+## Output Description
+
+The output files contain trips where the trip_distance exceeds the 0.9 percentile (8.42 miles). The files include all original columns for context.
+
+Sample Output:
+
+**VendorID	tpep_pickup_datetime	tpep_dropoff_datetime	trip_distance	total_amount**
+
+**2	        2024-01-01 00:49:44	    2024-01-01 01:15:47	      10.82	          64.95**
+
+
 ### **Review the Output:**
 
 The filtered data will be saved as **filtered_yellow_tripdata_2024-01.parquet** in your working directory.
@@ -84,4 +96,5 @@ The filtered data will be saved as **filtered_yellow_tripdata_2024-01.parquet** 
 ### **Considerations for Scaling**
 
 Data Volume: For larger datasets, consider using a distributed computing framework like PySpark.
+
 Optimization: Loading only necessary columns and handling missing values efficiently can reduce memory usage and processing time.
