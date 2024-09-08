@@ -38,4 +38,4 @@ assert df_filtered['trip_distance'].min() > percentile_90, "Some trips are below
 print("All trips in the filtered DataFrame are above the 0.9 percentile.")
 
 
-df_filtered.to_parquet("/Users/Mahdi's Mac/Downloads/filtered_yellow_tripdata_2024-01.parquet", engine='pyarrow')
+df_filtered.to_parquet("/Users/Mahdi's Mac/Downloads/tinybird/filtered_yellow_tripdata_2024-01.parquet", engine='pyarrow')

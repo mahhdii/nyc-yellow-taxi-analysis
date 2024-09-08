@@ -79,7 +79,7 @@ Execute the Python script to load, process, and filter the data:
 
 ### **Review the Output:**
 
-The filtered data will be saved as filtered_yellow_tripdata_2024-01.csv and filtered_yellow_tripdata_2024-01.parquet in your working directory.
+The filtered data will be saved as **filtered_yellow_tripdata_2024-01.parquet** in your working directory.
 
 ### **Considerations for Scaling**
 
