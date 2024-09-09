@@ -8,7 +8,7 @@ This project analyzes the NYC Yellow Taxi trip data for January 2024. The main g
 
 **yellow_taxi_trips.py**: The main Python script for loading, processing, and filtering the data.
 
-**filtered_yellow_tripdata_2024-01.csv**: The output CSV file containing trips with distances above the 0.9 percentile.
+**filtered_yellow_tripdata_2024-01.parquet**: The output CSV file containing trips with distances above the 0.9 percentile.
 
 **filtered_yellow_tripdata_2024-01.parquet**: The output Parquet file containing trips with distances above the 0.9 percentile.
 
@@ -28,7 +28,7 @@ The script calculates the 0.9 percentile for the trip_distance column. This perc
 The DataFrame is filtered to retain only those rows where trip_distance exceeds the 0.9 percentile value.
 
 5. **Saving the Output**:
-The filtered data is saved as both a CSV and Parquet file for further review.
+The filtered data is saved as Parquet file for further review.
 
 ### Assumptions
 
